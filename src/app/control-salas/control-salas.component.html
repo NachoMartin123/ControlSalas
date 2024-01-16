@@ -1,0 +1,16 @@
+<div style="min-height:40em;padding-top:30px;padding-left:1em;padding-right:1em;margin-bottom: 80px;">
+    <app-selector-planta 
+        [planta]="planta"
+        [plantasTotales]="plantasTotales"
+        (cambiarPlataEvent)="cambiarPlanta($event)"
+        (cambiarFiltrosEvent)="cambiarFiltros($event)"
+    ></app-selector-planta>
+    <mat-divider style="color:lightgrey;"></mat-divider>
+    <app-panel-sala 
+        [planta]="planta" 
+        [salas]="salas"
+        (addSalaEvent) = "addSala()"
+        (eliminarSalaEvent) = "eliminarSala($event)"
+        (guardarCambiosEvent) = "guardarCambios($event)"
+    ></app-panel-sala>
+</div>

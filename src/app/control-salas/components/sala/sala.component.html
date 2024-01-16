@@ -1,0 +1,36 @@
+<div class="mainDivSala">
+    <div fxLayout="row" fxLayoutAlign="space-between center" > 
+        <h2>Sala planta {{planta}}</h2>
+        <button mat-icon-button (click)="eliminarSala()" class="myBotonEliminar">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </div>
+    <div>
+        <div style>
+            <p class="titleInputSala">Capacidad máxima</p>
+            <input matInput
+                (change) ="checkCapMax()"
+                type="number"
+                max="100"
+                min="0"
+                placeholder="Capacidad máxima"
+                [(ngModel)]="capacidadMax" 
+            >            
+        </div>
+        <div>
+            <p class="titleInputSala">Ocupación</p>
+            <input 
+                type="number"
+                (change) ="checkOcu()"
+                max="100"
+                min="0"
+                placeholder="Ocupación"
+                [(ngModel)]="ocupacion"
+                class="inputSala"
+            >
+        </div>
+    </div>
+    <div class="parentButton" fxLayout="row" fxLayoutAlign="end center">
+        <button class="botonSala" (click)="guardarCambios()">Modificar</button>
+    </div>
+</div>

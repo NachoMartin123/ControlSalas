@@ -1,0 +1,78 @@
+#mainDivSelecPlanta{
+    h1{
+        display: block !important;
+    }
+    margin-bottom: 2em;
+}
+
+
+#filtrosContainer{
+    border-color: var(--my-color-borde) !important;
+    border-radius: var(--border-radius-container) !important;
+    padding: 1em;
+    border-style: solid;
+    border-width: 2px;
+    width:20em;
+}
+
+
+.inputSala{
+    background-color: white !important;
+    //icon 
+    padding-right: 30px !important;
+    background: url("../../percentage.png") no-repeat calc(100% - 15px);
+    background-size: 10px;
+}
+
+.filtroContainer{
+    mat-label{
+        width:50% !important;
+    }
+    input {
+        width:50% !important;
+    }
+}
+
+::ng-deep{
+    .mat-expansion-panel-body{
+        padding:0px !important;
+    }
+    .mat-expansion-panel-header {
+        padding:0px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 470px){
+    #mainDivSelecPlanta{
+        display:block !important;
+        
+    }
+
+    #divSelecPlanta{
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box
+
+        
+    }
+    #selectPlanta{
+        margin-top:0px !important;
+        
+        
+    }
+
+    #filtrosContainer{
+        max-width: 100% !important;
+        padding: 10px !important;
+        width:100% !important;
+        
+    }
+
+
+    
+}

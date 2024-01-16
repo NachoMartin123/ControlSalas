@@ -1,0 +1,19 @@
+<div id="mainContainer" class="borderRadiusContainer">
+    <div  fxLayout="row" fxLayoutAlign="space-between center" >
+        <h2>Planta {{planta}}</h2>
+        <button (click)="addSala()">Añadir sala</button>
+    </div>
+    <div id="containerSalas" >
+        <app-sala 
+            (eliminarSalaEvent)="eliminarSala($event)" 
+            (guardarCambiosEvent)="guardarCambios($event)"
+            *ngFor="let sala of salas" 
+            [planta] = "planta"
+            [capacidadMax] = "sala.capacidadMax" 
+            [ocupacion] = "sala.ocupacion" 
+            [id]="sala.id"
+            >
+        </app-sala>
+    </div>
+</div>
+

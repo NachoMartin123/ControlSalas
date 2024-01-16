@@ -1,0 +1,50 @@
+<div id="mainDivSelecPlanta" fxLayout="row" fxLayoutAlign="space-between center" >
+    <div id="divSelecPlanta">
+        <h1>Salas</h1>
+        <select id="selectPlanta" [ngModel]="planta" (ngModelChange)="cambiarPlanta($event)" style="margin-top:20px">
+            <option [value]="i" *ngFor="let i of plantas">Planta {{i}}</option>
+        </select>
+    </div>
+    <div id="filtrosContainer"  fxLayoutAlign="space-around center">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i class="fas fa-filter"></i>
+              </mat-panel-title>
+              <mat-panel-description>
+                Filtrar salas
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <div class="filtroContainer" fxLayout="row" fxLayoutAlign="space-between center" > 
+              <mat-label>Capacidad máxima</mat-label>
+              <input matInput
+                id="filtroCapMax" name="filtroCapMax"
+                type="number" 
+                max="200"
+                min="1"
+                placeholder="Capacidad máxima"
+                [(ngModel)]="filtroCapMax" 
+                (change)="cambiarFiltros()"
+              >     
+              <!--<mat-checkbox (change)="cambiarFiltros()" [(ngModel)]="chckCapMax" name="chckCapMax" id="chckCapMax"></mat-checkbox>-->
+            </div>
+        
+            <div class="filtroContainer" fxLayout="row" fxLayoutAlign="space-between center" >
+              <mat-label>Ocupación</mat-label>
+              <input 
+                id="filtroOcupacion" name="filtroOcupacion"
+                type="number"
+                max="100"
+                min="1"
+                placeholder="Ocupación"
+                [(ngModel)]="filtroOcupacion"
+                class="inputSala"
+                (change)="cambiarFiltros()"
+                >
+                <!--<mat-checkbox (change)="cambiarFiltros()" [(ngModel)]="chckOcupacion" name="chckOcupacion" id="chckOcupacion"></mat-checkbox>-->
+            </div>
+        
+        </mat-expansion-panel>
+    </div>
+</div>

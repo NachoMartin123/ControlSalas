@@ -1,0 +1,55 @@
+#mainContainer{
+    margin-top: 2em;
+    border-color: var(--my-color-borde) !important;
+    padding: 1em;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 2em;
+}
+
+#containerSalas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+@media screen and (min-width: 1400px){
+    #containerSalas{
+        grid-template-columns: repeat(auto-fill, minmax(19%, 1fr));
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #containerSalas{
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)) !important;
+        
+    }
+}
+
+@media screen and (min-width: 675px) and (max-width: 767px){
+    #containerSalas{
+        grid-template-columns: repeat(auto-fill, minmax(35%, 1fr)) !important;
+        
+    }
+}
+
+@media screen and (max-width: 674px){
+    #containerSalas{
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)) !important;
+        
+    }
+}
+
+@media screen and (max-width: 470px){
+    #containerSalas{
+        grid-template-columns: repeat(auto-fill, minmax(49%, 1fr)) !important;
+        
+    }
+}
+
+
+

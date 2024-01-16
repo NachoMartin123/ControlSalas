@@ -1,0 +1,17 @@
+{
+  "unsupportedBrowser": "Internet Explorer non é un navegador soportado. Por favor, acceda ao Visor dende outro navegador",
+  "noData": "Non hai datos",
+  "noTerms": "Extraendo entidades do procedemento seleccionado. Este proceso pode tardar varios minutos e execútase en segundo plano. Pode seguir utilizando outras funcionalidades do Visor. Por favor, espere.",
+  "error500": "Erro ao tentar acceder ao servidor",
+  "noPerm": "Sen permisos",
+  "aceptar": "Aceptar",
+  "guardar": "Gardar",
+  "cancelar": "Cancelar",
+  "save": "Gardar",
+  "clean": "Limpar",
+  "download": {
+    "selected": "Descargar contidos seleccionados",
+    "document": "Descargar documento",
+    "video": "Descargar vídeo"
+  }
+}

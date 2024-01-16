@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+.borderRadiusContainer {
+    border-radius: 26px;
+}
+
+
+:root {
+    --azul-oscuro: #2E344D; 
+    --azul-claro: #F5F7FB;
+    --my-color-borde: #A1A2A5;
+    --border-radius-botones: 12px;
+    --border-radius-container: 26px;
+
+    --small: 576px;
+    --medium: 768px;
+    --large: 992px;
+    --extra-large: 1400px;
+}
+
+h1, h2 {
+    display: inline-block;
+    font-weight: bold;
+    margin:0px;
+}
+
+* {
+    font-family: Helvetica;
+}
+
+h1{
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+}
+
+h2{
+    font-size:22px;
+}
+
+
+
+
+button {
+    color: white;
+    background-color: var(--azul-oscuro);
+    width:115px;
+    padding-left:20px;
+    padding-right:20px;
+
+    &:hover {
+        cursor:pointer;
+        filter: brightness(145%);
+    }
+}
+
+input {
+    width: 100%;
+    padding-left:1em;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-radius: var(--border-radius-botones) !important
+}
+
+select {
+    width:150px;
+    padding-left:20px;
+    padding-right:20px;
+    border-color: var(--my-color-borde);
+    &:hover {
+        cursor:pointer;
+    }
+
+    option{
+        padding:44px !important;
+    }
+}
+
+button, input, select {
+    height: 35px;
+    border-radius: var(--border-radius-botones);
+}
