@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
+![image](https://github.com/NachoMartin123/ControlSalas/assets/25524899/b875ef25-52e8-41db-8a23-059845daa338)
+
 ## Arrancar el proyecto
 
 Es necesario tener instalado el instalador de paquetes de node (npm)
@@ -41,3 +43,5 @@ La app angular no detecta las imágenes dentro de la ruta src/assets/img, pero s
 * Traducción al inglés
 * Test
 * Uso de cookies para guardar valores en navegador
+* Llamadas con API REST a BD 
+
