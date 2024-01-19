@@ -30,15 +30,6 @@ Se ha utilizado la api gratuita de Font Awesome 5.
 Se ha usado la api 'angular-material' para adaptar sus componentes a los de la aplicación 
 
 
-## Dificultades encontradas
-Se ha usado Angular 15.0.0, la versión compatible de NPM es 14.20.0. Ver en `https://angular.io/guide/versions`
-
-No se ha podido conectar a API mock de `http://apimocha.com/` porque no he encontrado la manera de introducir parámetros en las rutas de las llamadas, ni incluye ningún tipo de BD para guardar datos
-
-La app se ha hecho responsive sin bootstrap para no hacerla más pesada (NOTA: @media no funciona con variables, ya que estas están definidas en :root y @media queries no están asociadas a ningún elemento HTML)
-
-La app angular no detecta las imágenes dentro de la ruta src/assets/img, pero sí dentro de src/app.
-
 ## Futuras ampliaciones
 * Traducción al inglés
 * Test
